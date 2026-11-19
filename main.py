@@ -21,6 +21,7 @@ Selecione uma opção:
 4 - Atualizar equipamentos
 5 - sair
 """)
+    
     while True:
         try:
             x = int(input("Opção: "))
@@ -43,14 +44,6 @@ Selecione uma opção:
                 break
         except ValueError or AttributeError:
             print("Opção inválida. Digite apenas números de 1 a 5.")
-
-import os
-
-# Presumindo que essas variáveis existam no seu escopo global:
-stt = ["DISPONÍVEL", "DISPONIVEL", "INDISPONÍVEL", "INDISPONIVEL"]
-aff = ["SIM", "S", "NÃO", "NAO", "N"]
-equipamentos = []
-n = 0
 
 def cadastro():
     global n
